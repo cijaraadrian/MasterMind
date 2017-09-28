@@ -60,11 +60,7 @@ public class Controller {
     }
 
     public boolean Play() {
-        boolean ok = false;
-        do {
-            ok = controllerView.Continue().startsWith("S");
-        } while (!ok);
-        return ok;
+        return controllerView.Continue().startsWith("S");
     }
 
 }
